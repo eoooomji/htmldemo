@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_013_table.html</title>
+    <!-- 
+      table요소 사용하여 표 작성 시 필요한 표의 기본 서식을 css로 내부 혹은 외부로 만들어서 적용해야 한다.
+     -->
+    <style>
+      table {
+        background-color: yellow;
+        width: 500px;
+      }
+      /* 아래처럼 쉼표를 주면 같이 적용 됨 */
+      table,
+      th,
+      td {
+        border-width: 1px;
+        border-style: solid;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      <table>요소
+        1. 표를 만들때 사용
+        caption : 표의 제목 생성
+        thead : 표의 제일 윗 부분 제목 생성 및 리스트 단위
+        tfoot : 표의 제일 아랫 부분 합계 및 정리 단위 등
+        tbody : 표의 내용이 들어가는 부분
+        tr : 표의 행 생성
+        th : 표의 머릿 부분
+        td : 표의 기본 내용 부분
+        colspan : 가로 행 병합
+        rowspan : 세로 행 병합
+     -->
+    <table>
+      <caption>
+        <b>서적 구입 비용</b>
+      </caption>
+      <thead>
+        <tr>
+          <th>서적명</th>
+          <th>출판사</th>
+          <th>가격</th>
+          <th>기타</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">합계</td>
+          <td>80,000원</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>제우스</td>
+          <td>30,000원</td>
+          <td rowspan="2">&nbsp;</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <td>JSP</td>
+          <td>가메</td>
+          <td>50,000원</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

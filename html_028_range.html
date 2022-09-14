@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_028_range.html</title>
+  </head>
+  <body>
+    <!-- 
+        type="range"
+        1. 특정 범위의 숫자를 선택할때 사용
+        2. value를 통해 초기 범위 지정 가능
+        3. range바 옆에 숫자 표기를 원하면 자바스크립트를 이용해 만들 수 있다.
+     -->
+
+    <form action="#">
+      <h3>0~100 범위에서 원하는 지점을 선택하세요.</h3>
+      <input type="range" name="point" min="0" max="100" value="20" />
+      <p>
+        <input type="submit" value="전송" /> <input type="reset" value="취소" />
+      </p>
+    </form>
+  </body>
+</html>

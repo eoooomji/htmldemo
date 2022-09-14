@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- external style(외부스타일) -->
+    <!-- <link rel='stylesheet' src='./style/outer.css'
+        (아래와 같이 사용하거나 이와 같이 사용하면 된다. - 상대경로) /> -->
+    <link rel="stylesheet" href="style/outer.css" type="text/css" />
+    <!-- internal style(=embeded style 내부스타일) -->
+    <style type="text/css">
+      .one {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">internal style</div>
+    <div id="two">extrenal style</div>
+    <!-- 인라인스타일(선호하지 않는 형식이다.) -->
+    <div id="three" style="background-color: purple">inline style</div>
+  </body>
+</html>
